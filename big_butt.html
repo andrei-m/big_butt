@@ -7,7 +7,7 @@
     <p>Drag the link below to your bookmarks bar, then <a href="https://www.google.com/search?q=big+data">have fun</a>!</p>
     <p>
       <a href="javascript:(function() {
-        var regex = /([Bb]ig)\s([Dd])ata/i;
+        var regex = /([Bb]ig)\s([Dd])ata/ig;
         function replace(node) {
           if (node.nodeType == Node.TEXT_NODE && /\S/.test(node.nodeValue)) {
             node.nodeValue = node.nodeValue.replace(regex, function(match, big, d) {
